@@ -1,5 +1,4 @@
 ﻿//jQueryscript for real time clock
-
 $(document).ready(function () {
     var months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September",
         "Oktober", "November", "December"];
@@ -33,13 +32,6 @@ $(document).ready(function () {
     }, 1000);
 
 
-    //Find users position/city
-    //City + country
-    //$.get("http://ipinfo.io", function (response) {
-    //    $("#location").html(response.city, + ", " + response.country);
-    //}, "jsonp");
-
-
     //Find users region
     $.get("http://ipinfo.io", function (response) {
         $("#location").html(response.region);
@@ -52,16 +44,4 @@ $(document).ready(function () {
     var diff = new Date(start - currentDate); //Recycle variable currentDate from row 9
     var days = diff / 1000 / 60 / 60 / 24;
     $("#days-left").html(Math.ceil(days) + " dagar kvar på " + currentYear);
-
-
-
-
-
-
-
-
-    //Comment in to test that jQuery is installed and works
-    //$(".jumbotron").click(function () {
-    //    alert("jQuery installerat och fungerar.");
-    //});
 });
