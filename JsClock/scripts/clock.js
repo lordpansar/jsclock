@@ -1,4 +1,4 @@
-﻿//jQueryscript for real time clock
+﻿//jQueryscript for real time clock with Moment.js
 $(document).ready(function () {
     var months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September",
         "Oktober", "November", "December"];
@@ -32,8 +32,8 @@ $(document).ready(function () {
     }, 1000);
 
 
-    //Find users region
-    $.get("http://ipinfo.io", function (response) {
+    //Find user's region
+    $.get("https://ipinfo.io", function (response) {
         $("#location").html(response.region);
     }, "jsonp");
 
