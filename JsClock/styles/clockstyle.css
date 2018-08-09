@@ -1,27 +1,39 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 body {
-    /*font-size:12px;*/
+    background-color: #dd4814;
 }
 
-.clock {
-    width: 80%;
-    /*margin: 0 auto;*/
+#clock {
     margin:auto;
-    padding: 30px;
+    margin-top:5%;
+    padding: 4%;
     border-radius:25px;
     color: #fff;
     background-color:black;
 }
 
-#date, #location {
+.text {
     font-family: 'Press Start 2P', Arial, sans-serif;
-    font-size:1.8vw;
+    font-size:1.7vw;
     font-weight: 400;
     text-shadow: 0 0 5px #00c6ff;
-    /*text-align: center;*/
-    /*-ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;*/
+}
+
+#display {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.time {
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-weight: 400;
+    display: inline;
+    font-size: 3.5vw;
+    text-align: center; 
+    text-shadow: 0 0 5px #00c6ff;
 }
 
 #days-left {
@@ -31,38 +43,13 @@ body {
     text-shadow: 0 0 5px #00c6ff;
 }
 
-#display {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-ul li {
-    
-}
-
-.time {
-    font-family: 'Press Start 2P', Arial, sans-serif;
-    font-weight: 400;
-    display: inline;
-    /*font-size: 1.0em;*/
-    /*font-size: 50px;*/
-    font-size: 3.3vw;
-    /*font-size:110%;*/
-    text-align: center; 
-    text-shadow: 0 0 5px #00c6ff;
-}
-
-#point {
+.point {
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
-.jumbotron {
-    background-color: rgb(221, 72, 20);
+@media screen and (max-width: 2020px) {
+   .time {font-size: 3.3vw;}
+   .text {font-size: 1.6vw; }
 }
-
-
