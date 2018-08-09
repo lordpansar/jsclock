@@ -1,4 +1,4 @@
-﻿//jQueryscript for real time clock with Moment.js
+﻿//jQueryscript for real time clock
 $(document).ready(function () {
     var months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September",
         "Oktober", "November", "December"];
@@ -10,13 +10,11 @@ $(document).ready(function () {
 
     $('#date').html(days[currentDate.getDay()] + " " + currentDate.getDate() + ' ' + months[currentDate.getMonth()] + ' ' + currentDate.getFullYear());
 
-
     //Set seconds
     setInterval(function () {
         var seconds = new Date().getSeconds();
         $("#sec").html((seconds < 10 ? "0" : "") + seconds);
     }, 1000);
-
 
     //Set minutes
     setInterval(function () {
@@ -24,19 +22,16 @@ $(document).ready(function () {
         $("#min").html((minutes < 10 ? "0" : "") + minutes);
     }, 1000);
 
-
     //Set hours
     setInterval(function () {
         var hours = new Date().getHours();
         $("#hours").html((hours < 10 ? "0" : "") + hours);
     }, 1000);
-
-
+    
     //Find user's region
     $.get("https://ipinfo.io", function (response) {
         $("#location").html(response.region);
     }, "jsonp");
-
 
     //Days left of the year
     var currentYear = (new Date).getFullYear();
