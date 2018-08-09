@@ -2,33 +2,31 @@
 <html>
 <head>
     <title>Real time clock</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="styles/clockstyle.css" rel="stylesheet" />
-    <script src="scripts/jquery-2.2.4.min.js"></script>
-    <script src="scripts/jquery-2.2.4.intellisense.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/clock.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/clock.png" />
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <div class="clock">
-                <div id="date"></div>
-                <div id="location"></div>
-                <br />
-                <ul id="display">
-                    <li class="time" id="hours"></li>
-                    <li class="time" id="point">:</li>
-                    <li class="time" id="min"></li>
-                    <li class="time" id="point">:</li>
-                    <li class="time" id="sec"></li>
-                </ul>
-                <br />
-                <div id="days-left"></div>
-            </div>
+        <div id="clock">
+            <div id="date" class="text"></div>
+            <div id="location" class="text"></div>
+            <br />
+            <ul id="display">
+                <li class="time" id="hours"></li>
+                <li class="time point">:</li>
+                <li class="time" id="min"></li>
+                <li class="time point">:</li>
+                <li class="time" id="sec"></li>
+            </ul>
+            <br />
+            <div id="days-left"></div>
         </div>
     </div>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/clock.js"></script>
 </body>
 </html>
