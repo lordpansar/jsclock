@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "styles/clockstyle.min.css",
+    "inputFiles": [
+      "styles/clockstyle.css"
+    ]
+  },
+  {
+    "outputFileName": "scripts/clock.min.js",
+    "inputFiles": [
+      "scripts/clock.js"
+    ]
+  }
+]

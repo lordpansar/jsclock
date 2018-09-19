@@ -118,7 +118,11 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\jsclock - Web Deploy.pubxml" />
+    <Content Include="scripts\clock.min.js">
+      <DependentUpon>clock.js</DependentUpon>
+    </Content>
     <Content Include="scripts\esm\popper-utils.js" />
     <Content Include="scripts\esm\popper-utils.min.js" />
     <Content Include="scripts\esm\popper.js" />
@@ -167,6 +171,9 @@
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="styles\clockstyle.css" />
+    <Content Include="styles\clockstyle.min.css">
+      <DependentUpon>clockstyle.css</DependentUpon>
+    </Content>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
